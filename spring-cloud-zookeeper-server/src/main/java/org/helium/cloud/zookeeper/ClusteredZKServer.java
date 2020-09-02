@@ -1,7 +1,6 @@
 package org.helium.cloud.zookeeper;
 
 
-import org.apache.commons.io.FileUtils;
 import org.apache.zookeeper.server.ServerConfig;
 import org.apache.zookeeper.server.ZooKeeperServerMain;
 import org.apache.zookeeper.server.quorum.QuorumPeerConfig;
@@ -36,7 +35,7 @@ public class ClusteredZKServer {
                 String thisHostAddress = InetAddress.getLocalHost().getHostAddress();
                 if (host.equals(thisHostName) || host.equals(thisHostAddress)) {
                     //System.out.println(new File(props.getProperty("dataDir"), "myid").getAbsolutePath());
-                    FileUtils.write(new File(props.getProperty("dataDir"), "myid"), id);
+                    //FileUtils.write(new File(props.getProperty("dataDir"), "myid"), id);
                     QuorumPeerConfig quorumConfig = new QuorumPeerConfig();
                     quorumConfig.parseProperties(props);
 

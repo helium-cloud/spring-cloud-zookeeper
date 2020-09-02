@@ -1,8 +1,9 @@
 dependencies {
 
-    compile group: 'org.apache.zookeeper', name: 'zookeeper-jute', version: '3.5.7'
+    compile group: 'org.apache.zookeeper', name: 'zookeeper-jute', version: '3.6.1'
 // https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper
-    compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.5.7'
+    compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.6.1'
+
 
     compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: spring_boot_version) {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging' //by both name and group
